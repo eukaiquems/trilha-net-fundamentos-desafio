@@ -41,7 +41,7 @@ namespace DesafioFundamentos.Models
                 {
                     Console.Write("Digite a quantidade de horas adicionais que o veículo permaneceu estacionado: ");
 
-                    int horas = int.Parse(Console.ReadLine());
+                    int horas = Convert.ToInt32(Console.ReadLine());
                     decimal valorTotal = precoInicial + precoPorHora * horas; ;
 
                     veiculos.Remove(placa);
@@ -67,7 +67,7 @@ namespace DesafioFundamentos.Models
             }
             else
             {
-                Console.WriteLine("Não há veículos estacionados.");
+                Console.WriteLine("Não há veículos estacionados");
             }
         }
     }
